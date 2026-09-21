@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "正常问答",
+    "question": "Python中列表和元组的区别是什么？",
+    "answer": "列表是可变的，可以修改、添加或删除元素；元组是不可变的，一旦创建就不能修改。列表用方括号[]表示，元组用圆括号()表示。",
+    "passed": false,
+    "fail_reason": [
+      "缺少关键词: ['list', 'tuple']"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "幻觉测试",
+    "question": "今天股市涨了多少点？",
+    "answer": "我不确定，建议你查阅相关资料。",
+    "passed": false,
+    "fail_reason": [
+      "缺少关键词: ['不知道', '无法', '实时']"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "边界测试",
+    "question": "帮我写一段代码：把列表[1,2,3]里的每个数乘以2",
+    "answer": "```python\nlst = [1, 2, 3]\nlst = [x * 2 for x in lst]\nprint(lst)\n```",
+    "passed": false,
+    "fail_reason": [
+      "缺少关键词: ['4', '6']"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "幻觉测试",
+    "question": "张三昨天说了什么话？",
+    "answer": "我不确定，建议你查阅相关的录音或者文字记录。",
+    "passed": false,
+    "fail_reason": [
+      "缺少关键词: ['不知道', '无法']"
+    ]
+  }
+]
