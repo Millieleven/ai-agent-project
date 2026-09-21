@@ -116,7 +116,7 @@ def chat_with_tools(user_question: str):
         model="Qwen/Qwen2.5-7B-Instruct",
         messages=messages,
         tools=tools,  # 关键：告诉AI有哪些工具
-        tool_choice="auto"  # 让AI自己决定要不要调用工具
+        tool_choice="auto"  # 让AI自己决定要不要调用工具/ tool_choice="required"  # 强制必须调用工具
     )
 
     response_message = response.choices[0].message
